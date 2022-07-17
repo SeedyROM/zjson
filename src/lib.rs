@@ -38,7 +38,7 @@ pub fn parse_single_quoted_string(input: &str) -> nom::IResult<&str, Token> {
             tag("'"),
         ),
     )(input)
-    .map(|(next_input, res)| (next_input, Token::String(res.into())))
+    .map(|(next_input, res)| (next_input, Token::String(res)))
 }
 
 /// Parse a double quoted string.
