@@ -1,0 +1,3 @@
+# This is stupid, but it makes the coverage issues go away for tests...
+[config]
+ignore-tests = true
